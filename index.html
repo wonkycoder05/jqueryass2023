@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>JQUERY ASSIGNMENT</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('#accordion').find('.accordion-toggle').click(function(){
+
+          $(this).next().slideToggle('fast');
+    
+
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+    
+        });
+      });
+
+   
+</script>
+
+<link href= 
+"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css 
+         " rel="stylesheet"> 
+  
+    <script src= 
+        "https://code.jquery.com/jquery-1.10.2.js"> 
+    </script> 
+  
+    <script src= 
+        "https://code.jquery.com/ui/1.10.4/jquery-ui.js"> 
+    </script> 
+  
+    <script> 
+        $(function() { 
+            $("#gfg").tabs(); 
+            var a = $("#tabs").tabs('widget'); 
+            console.log(a) 
+        }); 
+        </script>
+    
+
+    <style>
+      .accordion-toggle {cursor: pointer;}
+      .accordion-content {display: none;}
+      .accordion-content.default {display: block;}
+      .body{background-color: #ffdede;}
+
+    </style>
+    <style>
+        .mymultiplediv{
+            cursor:pointer;
+          }
+        .mymultiplediv{
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            color: #2b96cc;    
+            text-align: center;
+        }
+        .mydiv{
+            display:none;
+              padding:10px;
+              text-align:center;
+        }
+        .mydiv img{
+          margin: 0 auto;
+        }
+        .mydiv span{
+            text-align: center;
+            background: #ffdede;
+            padding: 6px 10px;
+            display: block;
+            width: 100px;
+            border: 1px solid #d47c7c;
+            margin: 8px auto;
+        }
+        </style>
+        <script>
+        $(document).ready(function(){
+            $('.mymultiplediv').mouseover(function() {
+                  myvar = this.id;
+                  $("div.mydiv").hide();
+                   $('#div'+myvar).show();
+            });
+        });
+        </script>
+
+</head>
+<body>
+  
+<div id="accordion">
+    <h3 class="accordion-toggle">Lorem Ipsum</h3>
+<div class="accordion-content">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate, nunc vitae ultrices suscipit, erat ex finibus turpis, sed auctor est libero vel velit. Proin blandit erat at sem facilisis pulvinar. Nulla tellus mauris, gravida vel malesuada quis, malesuada et leo. Proin interdum ullamcorper tellus et laoreet. Morbi quis ex id odio hendrerit aliquet vitae non sem. Sed erat lorem, varius tincidunt finibus eget, volutpat a dolor. Morbi et dolor mollis purus malesuada porta nec a ipsum. Nullam feugiat at nulla in congue. Vestibulum dictum arcu a eros finibus malesuada. Curabitur feugiat, mauris sed laoreet vulputate, magna erat laoreet ipsum, in malesuada lorem erat vel nulla. Pellentesque a metus at tortor pharetra egestas at in lectus. Sed interdum interdum iaculis. Sed maximus at sapien in tincidunt. Donec at nunc ut justo gravida ullamcorper vitae viverra leo.
+</p>
+</div>
+<h3 class="accordion-toggle">Yoohoo</h3>
+<div class="accordion-content">
+<p>
+Nam aliquam turpis tortor, quis porta magna fermentum ut. Integer consectetur mauris sed ex vulputate hendrerit. Mauris eu dui ac arcu commodo pulvinar vel in ligula. Donec faucibus metus sit amet magna auctor, in pulvinar purus volutpat. Vivamus bibendum ligula pellentesque venenatis congue. Proin feugiat, tellus non rutrum vulputate, eros enim aliquam erat, nec aliquet odio leo ac massa. Curabitur rhoncus neque vel ante egestas, ac dictum ante dictum. Quisque in efficitur leo. In lobortis accumsan dapibus. Integer fringilla lacinia lorem sit amet dignissim. Pellentesque iaculis efficitur nisi eget ultricies. Sed massa mi, iaculis quis elit sed, ullamcorper finibus urna. Vestibulum fermentum et sem vel facilisis. Morbi a arcu non magna elementum dapibus ac quis velit. Pellentesque ipsum magna, rhoncus nec cursus id, varius ut lorem.
+</p>
+</div>
+<h3 class="accordion-toggle">Kuesus!</h3>
+<div class="accordion-content">
+<p>
+Mauris et malesuada elit. Aliquam erat volutpat. Nullam facilisis felis posuere lobortis suscipit. Aenean accumsan turpis non est laoreet, semper pharetra dolor mollis. Donec eu fermentum eros. Duis sit amet ipsum non lectus sodales ultrices. Praesent scelerisque nibh at leo consequat congue hendrerit sed orci.
+
+Donec pretium sapien quis lorem auctor porttitor a vel lacus. Vestibulum imperdiet felis sed ligula mollis condimentum. Donec molestie velit dui. Etiam non ultrices mauris. Praesent et metus nisi. Nam facilisis quam eget mauris fermentum blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+</p>
+</div>
+<h3 class="accordion-toggle">hi :D</h3>
+<div class="accordion-content">
+<p>
+Donec lacinia sodales elit at viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur euismod nunc, sollicitudin suscipit metus dictum eget. Etiam imperdiet erat lorem, non dignissim leo tempor in. Vestibulum sagittis nibh velit, sit amet sagittis velit rhoncus ut. Pellentesque porttitor, arcu quis laoreet mattis, metus nulla semper lectus, ac scelerisque mi dui at neque. Sed gravida vel nisl ut consectetur. Quisque laoreet purus ac lorem tincidunt, auctor dapibus nisl commodo. Duis eu magna quis libero varius hendrerit. Donec ut lacus turpis.
+</p>
+</div>
+</div>
+</div>
+<ul class="list-inline">
+    <li><a href="#" class="mymultiplediv" id="one">kuesus</a></li>
+   
+</ul>
+ <div class="mydiv" id="divone"><img src="sus.jpg" alt="sus?" class="img-responsive img-thumbnail"/><span>sus?</span></div>
+<div id="tabs">
+<ul>
+    <li><a href="#tabs-1">yoohoo</a></li>
+    <li><a href="#tabs-2">kuesus</a></li>
+    
+</ul>
+
+    <div id="tabs-1">
+        <p>Mauris et malesuada elit. Aliquam erat volutpat. Nullam facilisis felis posuere lobortis suscipit. Aenean accumsan turpis non est laoreet, semper pharetra dolor mollis. Donec eu fermentum eros. Duis sit amet ipsum non lectus sodales ultrices. Praesent scelerisque nibh at leo consequat congue hendrerit sed orci.</p>
+    </div>
+    <div id="tabs-2">
+
+        <p>kuesus!</p>
+    </div>
+</div>
+</body>
+
+</html>
